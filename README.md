@@ -6,7 +6,7 @@ A small web app that calculates the average of your course grades and shows the 
 
 ![Screenshot](screenshot.png)
 
-**Live app:** _paste your GitHub Pages link here_
+**Live app:** https://dharuvi.github.io/Grade-Average-Calculator/ 
 
 ## Features
 - Add a course with a name and a grade (0–100). Invalid input shows a message.
