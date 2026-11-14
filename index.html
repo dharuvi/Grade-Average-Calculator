@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grade Average Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Grade Average Calculator</h1>
+    <p class="sub">Add your courses and grades (0–100) to see your average.</p>
+
+    <form id="add-form" autocomplete="off">
+      <label>Course
+        <input id="name" type="text" placeholder="e.g. Math 101" required maxlength="40">
+      </label>
+      <label>Grade (%)
+        <input id="grade" type="number" min="0" max="100" step="any" placeholder="0–100" required>
+      </label>
+      <label id="credits-label" hidden>Credits
+        <input id="credits" type="number" min="0.5" step="0.5" value="3">
+      </label>
+      <button type="submit">Add course</button>
+    </form>
+    <p id="error" class="error" role="alert"></p>
+
+    <label class="toggle">
+      <input id="weighted" type="checkbox"> Weight by credits
+    </label>
+
+    <ul id="list" aria-label="Courses"></ul>
+    <p id="empty" class="empty">No courses yet. Add one above.</p>
+
+    <section class="result" aria-live="polite">
+      <div><span class="label">Average</span><span id="avg" class="big">–</span></div>
+      <div><span class="label">Letter grade</span><span id="letter" class="big">–</span></div>
+    </section>
+  </main>
+
+  <script src="grades.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
