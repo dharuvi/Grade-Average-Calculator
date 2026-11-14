@@ -33,5 +33,3 @@ Open `index.html` in a browser. No build step, server or sign-in needed.
 ## Tools and AI used
 Plain HTML, CSS and JavaScript, no libraries. Built with help from Claude (Anthropic's AI assistant) for code and the report; Playwright was used to check the page in a browser.
 
-## Deploy (GitHub Pages)
-Push this folder to a GitHub repository, then Settings → Pages → Deploy from branch → `main` / root.
